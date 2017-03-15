@@ -5,10 +5,7 @@ import RootComponent from './components/RootComponent';
 
 const client = new ApolloClient({
     networkInterface: createNetworkInterface({
-        uri: 'http://localhost:3000/graphql',
-        opts: {
-            method: 'GET'
-        }
+        uri: 'http://localhost:3000/graphql'
     }),
 });
 
