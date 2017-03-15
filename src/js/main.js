@@ -1,4 +1,4 @@
-import  { ApolloClient, createNetworkInterface, ApolloProvider } from 'react-apollo';
+import { ApolloClient, createNetworkInterface, ApolloProvider } from 'react-apollo';
 import React from 'react';
 import ReactDom from 'react-dom';
 import RootComponent from './components/RootComponent';
