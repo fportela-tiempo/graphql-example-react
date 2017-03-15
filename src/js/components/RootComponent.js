@@ -1,5 +1,6 @@
 import React from 'react';
 import { gql, graphql } from 'react-apollo';
+import PeopleList from './PeopleList';
 
 const People = gql`
     query person{
@@ -19,7 +20,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                Ready!
+                <PeopleList people={this.props.data.people} />
             </div>
         );
     }
