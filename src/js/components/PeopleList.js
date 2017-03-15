@@ -10,6 +10,7 @@ const People = gql`
             lastName
             email
             posts{
+                id
                 title
             }
         }
