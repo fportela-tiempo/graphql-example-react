@@ -4,7 +4,13 @@ import { gql, graphql } from 'react-apollo';
 const People = gql`
     query person{
         people{
-            id
+            id,
+            firstName
+            lastName
+            email
+            posts{
+                title
+            }
         }
     }
 `;
