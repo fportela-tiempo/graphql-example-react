@@ -6,10 +6,6 @@ module.exports = {
         path: path.resolve('./dist'),
         filename: "bundle.js",
     },
-    devServer: {
-        inline: true,
-        contentBase: path.resolve('./dist'),
-    },
     module: {
         loaders: [
             {
