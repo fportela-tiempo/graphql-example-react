@@ -3,7 +3,7 @@ module.exports = {
     devtool: 'source-map',
     entry: "./src/js/main.js",
     output: {
-        path: './dist',
+        path: path.resolve('./dist'),
         filename: "bundle.js",
     },
     devServer: {
@@ -21,5 +21,8 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer:{
+        port: 8080
     }
 };
